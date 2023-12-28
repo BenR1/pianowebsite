@@ -1,0 +1,79 @@
+    /* Center the text and set the background image*/
+    body{
+        text-align: center;
+        background-image: url(images/notes_search.jpg._1596011321);
+        background-repeat: no-repeat;
+        background-size:cover;
+
+    }
+    /* Style the piano container */
+    .piano {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    /* Style the piano keys */
+    .note {
+        height: 150px; 
+        width: 45px; 
+        border: 1px solid #000;
+        box-sizing: border-box;
+    }
+    /*Makes a shadow on the key I press*/
+    .pressed {
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+        transform: translateY(5px);
+    }
+
+    .white-key {
+        background-color: #fff;
+    }
+
+    .black-key {
+        background-color: #000;
+        height: 100px; 
+        width: 30px;  
+        margin-left: -15px; 
+        margin-right: -15px;
+        z-index: 1;
+        position: relative;
+        color: white;
+    }
+
+    .h1 {
+       
+        justify-content:center;
+        font-size: 5rem;
+        color: #da580d;
+    }
+
+    /*Determines the position of which a clicked image is played*/
+    .image-container {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    /*Sets the fade time*/
+    .fade-in-out {
+        animation: fade-in-out 1s ease-out;
+        width: 170px;
+    }
+    /* Define a fade-in-out animation */
+    @keyframes fade-in-out {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+
+
+
+   
